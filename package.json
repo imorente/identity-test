@@ -1,0 +1,18 @@
+{
+  "name": "identity-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:imorente/identity-test.git",
+  "author": "Irene Morente <imorente@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "mkdir -p dist && cp public/* dist/ && browserify src/index.js -t [ babelify --presets [ es2015 ] ] > dist/app.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "gotrue-js": "^0.6.2"
+  }
+}
